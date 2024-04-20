@@ -30,7 +30,7 @@ jobs:
       with:
         host: 44.211.41.172
         username: ec2-user
-        key: ./1.pem
+        key: ${{ secrets.key }}
         script: |
           sudo yum update -y
           sudo yum install docker -y
