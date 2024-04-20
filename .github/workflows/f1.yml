@@ -19,7 +19,10 @@ jobs:
         username: ahmedehab69
         password: Deeznuts200169.
     
-    - name: run command
-      run: ls -l
+    - name: Build Docker image
+      run: docker build -t ahmedehab69/djangoapp:v3.0 .
+  
+    - name: Push Docker image
+      run: docker push ahmedehab69/djangoapp:v3.0
 
     
