@@ -18,5 +18,8 @@ jobs:
       with:
         username: ahmedehab69
         password: Deeznuts200169.
-        
+    
+    - name: run command
+      run: ls -l
+
     
